@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 # URL da API do Zabbix
-url = 'http://zabbix.wgo.com.br/zabbix/api_jsonrpc.php'
+url = 'SEUzabbixURL/zabbix/api_jsonrpc.php'
 
 # Cabeçalhos da requisição
 headers = {
@@ -15,7 +15,7 @@ headers = {
 }
 
 # Token de autenticação
-auth_token = '7fe375b90c85cffadd8ff18d6b7d40e91e9c82ab42a35be759cb9737281d8236'
+auth_token = 'SUAKEY'
 
 # Função para verificar se o host possui um item com o nome "syslog"
 def verificar_chave_syslog(host_id):
