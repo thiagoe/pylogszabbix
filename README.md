@@ -16,6 +16,7 @@ Para o uso é necessário 3 etapas:
 1. Usar o template syslog no host que deseje enviar arquivos
 2. Executar o log.py que ficará responsavel de tratar os logs que chegam
 3. Atualizar os mapas periodicamente com maps update.py
+4. O host deve enviar logs para porta configurada no rsyslog
 
 ## Funcionamento
 
