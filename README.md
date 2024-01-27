@@ -6,7 +6,7 @@ Bem-vindo ao repositório do Atualizador de Mapas Zabbix! 🚀
 
 ## Descrição
 
-Este repositório contém um script em Python que permite atualizar elementos em mapas do Zabbix automaticamente. Se você está cansado de atualizar manualmente os mapas no seu sistema de monitoramento Zabbix, este script está aqui para salvar o dia!
+Este repositório contém scripts em Python que permite receber logs de equipamento de rede e armazenar em forma de item e tambem atualizar elementos em mapas do Zabbix automaticamente. 
 
 ![Map](https://github.com/thiagoe/pylogszabbix/assets/18621801/d839c765-0070-4bd8-94c6-b379779d3644)
 
@@ -28,15 +28,19 @@ Pacotes Python: Instale os pacotes Python necessários usando o seguinte comando
 Ajuste as variáveis de configuração nos scripts Python para corresponder ao seu ambiente. Configurações importantes incluem:
 
 URL do Servidor Zabbix, Nome de Usuário e Senha: Configure essas variáveis em envio.py.
+Todas Configurações estão ajustadas pra executar a parte do diretorio
 
-Configuração do Rsyslog: Configure o rsyslog para encaminhar logs para o script Python. Você pode usar a configuração rsyslog fornecida em rsyslog.conf.
+>/log
+
+Configuração do Rsyslog: Configure o rsyslog para encaminhar logs para o script Python. Você pode usar a configuração rsyslog fornecida em rsyslog.conf. Basta copiar para /etc/rsyslog.d/zabbix_rsyslog.conf
 
 ## Uso
-Execute log.py: Execute log.py para começar a capturar mensagens syslog.
+Execute log.py para começar a capturar mensagens syslog.
 
 > python log.py
 
-Configure o rsyslog: Certifique-se de que o rsyslog esteja configurado para encaminhar logs para o script Python.
+Certifique-se de que o rsyslog esteja configurado para encaminhar logs para o script Python.
+Acompanhe os logs do diretorio em caso de falhas.
 
 ## Atualização Mapas
 ## Recursos
