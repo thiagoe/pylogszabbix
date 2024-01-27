@@ -11,7 +11,7 @@ Este repositório contém scripts em Python que permite receber logs de equipame
 ## Integração Rsyslog-Zabbix
 Este projeto demonstra uma integração entre o rsyslog, Zabbix e Python. Ele foi criado para capturar mensagens syslog usando o rsyslog, identificar o endereço IP do host de origem, obter o nome do host do Zabbix e, em seguida, enviar a mensagem de log para um item do Zabbix.
 Um segundo Script faz a integraçao da URLs de logs nos mapas para facilitar os uso.
-Para sera necessario 3 etapas:
+Para o uso é necessário 3 etapas:
 
 1. Usar o template syslog no host que deseje enviar arquivos
 2. Executar o log.py que ficará responsavel de tratar os logs que chegam
