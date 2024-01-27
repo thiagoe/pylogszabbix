@@ -2,7 +2,7 @@
 
 #  PyLogsZabbix
 
-Bem-vindo ao repositório do Atualizador de Mapas Zabbix! 🚀
+Bem-vindo ao repositório do PyLogsZabbix! 🚀
 
 ## Descrição
 
