@@ -1,0 +1,36 @@
+zabbix_export:
+  version: '5.4'
+  date: '2024-01-27T01:51:31Z'
+  groups:
+    -
+      uuid: 7df96b18c230490a9a0a9e2307226338
+      name: Templates
+  templates:
+    -
+      uuid: 435201a1498748a3a5dde10f2f1cdbb4
+      template: Syslog
+      name: Syslog
+      groups:
+        -
+          name: Templates
+      items:
+        -
+          uuid: 76f472f6e27643809562a554846f2b18
+          name: Syslog
+          type: TRAP
+          key: syslog
+          delay: '0'
+          history: 30d
+          trends: '0'
+          value_type: LOG
+          logtimefmt: yyyyxMMxddxhhxmmxssxxxxxx
+          triggers:
+            -
+              uuid: c4a6ada7e37942129606e575fd48fbf8
+              expression: 'find(/Syslog/syslog,5m,"like","br_radius")=1'
+              name: 'Teste-log br_radius'
+            -
+              uuid: e1ba808370844bec811c5b8eabb311c3
+              expression: 'find(/Syslog/syslog,100,"like","crit")=0'
+              name: 'teste-Log Datacom'
+              status: DISABLED
