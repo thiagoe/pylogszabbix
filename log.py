@@ -5,10 +5,10 @@ import re
 import subprocess
 from pyzabbix import ZabbixAPI
 
-ZABBIX_API_URL = "http://192.168.22.233/zabbix/api_jsonrpc.php"
-ZABBIX_UNAME = "Admin"
-ZABBIX_PWORD = "Esfp$$#1040"
-LOG_FILE = "/log/teste.log"
+ZABBIX_API_URL = "SEUZABBIXURL/zabbix/api_jsonrpc.php"
+ZABBIX_UNAME = "usuario"
+ZABBIX_PWORD = "senha"
+LOG_FILE = "/log/maplog.log"
 CACHE = {}
 
 def initialize_logging():
