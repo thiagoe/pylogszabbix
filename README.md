@@ -71,11 +71,9 @@ Acompanhe os logs do diretorio em caso de falhas.
 
 Para começar com o Atualizador de Mapas Zabbix, siga estas etapas:
 
-1. Clone este repositório em sua máquina local.
-2. Instale as dependências necessárias executando `pip install -r requirements.txt`.
-3. Atualize as variáveis `url`, `headers` e `auth_token` no script para corresponder à configuração da sua API do Zabbix.
-4. Execute o script usando `python final.py`.
-5. Relaxe e deixe o script atualizar seus mapas do Zabbix automaticamente.
+1. Atualize as variáveis `url`, `headers` e `auth_token` no script para corresponder à configuração da sua API do Zabbix.
+2. Execute o script usando `mapupdate.py`.
+3. Relaxe e deixe o script atualizar seus mapas do Zabbix automaticamente.
 
 Por favor, observe que você precisa ter o Python instalado em sua máquina e acesso a uma instância do Zabbix com a API habilitada.
 
