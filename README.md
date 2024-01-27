@@ -28,7 +28,7 @@ Para o uso é necessário 3 etapas:
 ## Pré-requisitos
 Antes de usar esta integração, certifique-se de que o seguinte esteja configurado:
 Rsyslog: Configure o rsyslog para capturar mensagens syslog e encaminhá-las para o script Python.
-Servidor Zabbix: Certifique-se de que o Zabbix esteja configurado e que os hosts tenham IP e nomes corretos.
+Servidor Zabbix: Certifique-se de que o Zabbix esteja configurado e que os hosts tenham IP e nomes corretos e template correto.
 Pacotes Python: Instale os pacotes Python necessários usando o seguinte comando:
 
 > pip install pyzabbix
@@ -36,7 +36,7 @@ Pacotes Python: Instale os pacotes Python necessários usando o seguinte comando
 ## Configuração
 Ajuste as variáveis de configuração nos scripts Python para corresponder ao seu ambiente. Configurações importantes incluem:
 
-URL do Servidor Zabbix, Nome de Usuário e Senha: Configure essas variáveis em envio.py.
+URL do Servidor Zabbix, Nome de Usuário e Senha: Configure essas variáveis em log.py.
 Todas Configurações estão ajustadas pra executar a parte do diretorio
 
 >/log
