@@ -38,11 +38,6 @@ Execute log.py: Execute log.py para começar a capturar mensagens syslog.
 
 Configure o rsyslog: Certifique-se de que o rsyslog esteja configurado para encaminhar logs para o script Python.
 
-Execute envio.py: Execute envio.py para enviar uma mensagem de log de exemplo para o Zabbix.
-
-
-> python envio.py
-
 ## Atualização Mapas
 ## Recursos
 
