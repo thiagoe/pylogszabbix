@@ -8,6 +8,11 @@ Bem-vindo ao repositório do Atualizador de Mapas Zabbix! 🚀
 
 Este repositório contém um script em Python que permite atualizar elementos em mapas do Zabbix automaticamente. Se você está cansado de atualizar manualmente os mapas no seu sistema de monitoramento Zabbix, este script está aqui para salvar o dia!
 
+![Map](https://github.com/thiagoe/pylogszabbix/assets/18621801/d839c765-0070-4bd8-94c6-b379779d3644)
+
+![logs](https://github.com/thiagoe/pylogszabbix/assets/18621801/a59d3783-6eae-4e7b-aad2-36d072ec9c64)
+
+
 ## Recursos
 
 - Obtém todos os mapas da sua instância do Zabbix.
