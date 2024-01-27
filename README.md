@@ -12,7 +12,38 @@ Este repositório contém um script em Python que permite atualizar elementos em
 
 ![logs](https://github.com/thiagoe/pylogszabbix/assets/18621801/a59d3783-6eae-4e7b-aad2-36d072ec9c64)
 
+## Integração Rsyslog-Zabbix
+Este projeto demonstra uma integração entre o rsyslog, Zabbix e Python. Ele foi criado para capturar mensagens syslog usando o rsyslog, identificar o endereço IP do host de origem, obter o nome do host do Zabbix e, em seguida, enviar a mensagem de log para um item do Zabbix.
+Um segundo Script faz a integraçao da URLs de logs nos mapas para facilitar os uso.
 
+## Pré-requisitos
+Antes de usar esta integração, certifique-se de que o seguinte esteja configurado:
+Rsyslog: Configure o rsyslog para capturar mensagens syslog e encaminhá-las para o script Python.
+Servidor Zabbix: Certifique-se de que o Zabbix esteja configurado e que os hosts tenham IP e nomes corretos.
+Pacotes Python: Instale os pacotes Python necessários usando o seguinte comando:
+
+> pip install pyzabbix
+
+## Configuração
+Ajuste as variáveis de configuração nos scripts Python para corresponder ao seu ambiente. Configurações importantes incluem:
+
+URL do Servidor Zabbix, Nome de Usuário e Senha: Configure essas variáveis em envio.py.
+
+Configuração do Rsyslog: Configure o rsyslog para encaminhar logs para o script Python. Você pode usar a configuração rsyslog fornecida em rsyslog.conf.
+
+## Uso
+Execute log.py: Execute log.py para começar a capturar mensagens syslog.
+
+> python log.py
+
+Configure o rsyslog: Certifique-se de que o rsyslog esteja configurado para encaminhar logs para o script Python.
+
+Execute envio.py: Execute envio.py para enviar uma mensagem de log de exemplo para o Zabbix.
+
+
+> python envio.py
+
+## Atualização Mapas
 ## Recursos
 
 - Obtém todos os mapas da sua instância do Zabbix.
